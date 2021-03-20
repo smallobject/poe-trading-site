@@ -6,7 +6,13 @@
 .pnp.js
 package-lock.json
 /server/node_modules
+/server/.gitignore
+/client/.gitignore
 /client/node_modules
+/client/.eslintcache
+/client/TODO
+/client/changelog
+
 
 # testing
 /coverage
