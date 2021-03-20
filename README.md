@@ -4,7 +4,7 @@ The project uses the PoE official API to search for items, accounts and characte
 
 PS: The code is very messy as I haven't really remove most of the testing code, will get around to this as I'm converting the project to Typescript and most likely Python for backend.
 
-![demofile](https://i.imgur.com/h8IX4Fq.gif 'Demo Image')
+![demofile](https://raw.githubusercontent.com/smallobject/poe-trading-site/master/images/demo.gif 'Demo Image')
 
 # Features:
 
