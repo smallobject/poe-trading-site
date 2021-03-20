@@ -7,6 +7,7 @@ You don't need to run the client side separately unless you really have to since
 - React
 - Redux & redux-thunk
 - TailwindCSS
+- PostCSS
 
 # TailwindCSS
 

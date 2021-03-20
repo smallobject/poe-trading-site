@@ -23,17 +23,20 @@ PS: The code is very messy as I haven't really remove most of the testing code, 
 
 - [x] Fix linking sockets, currently does not link properly.
 - [x] Figure out a way to read the API sockets and render the links correctly. (this took a bit..)
-- [ ] Add more options for searching other than sockets.
+- [x] Add more options for searching other than sockets.
 - [ ] Improve UI/UX.
 - [ ] Add Ladder/Mods list.
 - [ ] Optimize for mobile.
 - [ ] Improve performance, like locally storing the items for auto-completion.
+- [ ] Move project to Typescript or remake it.
+- [ ] Move backend to Python.
 
 # Used
 
 - React
 - Redux & redux-thunk
 - TailwindCSS
+- PostCSS
 - NodeJS & Express
 
 # Usage
