@@ -1,0 +1,23 @@
+Crashes:
+    Item Render:
+        ✔ @high When the item has no ilvl requirements, it crashes the render (temp fix)@done(21-02-08 22:54)
+        ✔ @high When the item has no implicits/explicit mods it crashes the render (temp fix) @done(21-02-06 02:30)
+        ✔ When an item is non-id the entire render crashes (temp fix) @done(21-02-10 14:35)
+        ☐ When an item doesn't have implicits it render crashes
+        ☐ When an item doesn't have explicits it render crashes
+    Search Crashes:
+        ✔ Added a check for when an item does not have a name but has a type in the API instead of just crashing @done(21-02-09 00:24)
+
+Todos:
+    Features:
+        ☐ Add a cog to represent settings and load the user account there instead of in the menu
+        ✔ Add a dropdown menu showing items and rendering the selected item @done(21-02-06 02:31)
+        ✔ Add functions to check item rarity and render proper colors @started(21-02-06 02:31) @done(21-02-08 23:04) @lasted(2d20h33m16s)
+        ✔ Add a function to check ilvl requirements and removed crash from happening @done(21-02-08 23:56)
+        ✔ Add all PoE unique items to the auto complete @done(21-02-08 23:56)
+    Done:
+        ✔ Function to check if item has a name and if not render typeLine instead (for rare and magic items mostly) @done(21-02-08 22:54)
+        ✔ Highlight item on hover dynamically creating a nice white shadow @done(21-02-08 22:55)
+        ✔ Moved all item checking functions outside of components and into a helper file for usability @done(21-02-08 22:59)
+        ✔ Create script to loop over all PoE items API and write them to a JSON for autocomplete @done(21-02-08 23:56)
+        ✔ Added render for other requirements like Str, Int, Dex @done(21-02-09 13:37)

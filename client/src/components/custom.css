@@ -1,0 +1,247 @@
+.autocomplete-wrapper {
+  max-height: 60px;
+  min-width: 71%;
+  /* max-width: 800px; */
+}
+
+.autocomplete-wrapper > div {
+  width: 100%;
+}
+
+.autocomplete-wrapper input {
+  background-color: rgba(17, 24, 39);
+  border: 1px solid rgba(75, 85, 99);
+  padding: 12px 15px;
+  font-size: 14px;
+  width: 100%;
+  color: rgba(229, 231, 235);
+  border-radius: 0.5rem;
+}
+
+.autocomplete-wrapper input:focus {
+  border-color: #696969;
+  box-shadow: none;
+  outline: none;
+}
+
+.autocomplete-wrapper .dropdown {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+  max-height: 280px;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: rgba(17, 24, 39);
+  border: 1px solid #696969;
+  border-top: none;
+  color: rgba(229, 231, 235);
+}
+
+.autocomplete-wrapper .item {
+  z-index: 2;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 15px;
+}
+
+.autocomplete-wrapper .item.selected-item {
+  background-color: #4b5563;
+  color: #fafbfc;
+}
+
+.autocomplete-wrapper .item:hover {
+  background-color: rgba(55, 65, 81);
+  color: #fafbfc;
+}
+
+.unique-item {
+  color: #af6025;
+}
+
+.main-border {
+  border: 1px solid black;
+}
+
+.unique-hr {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(175, 96, 37, 0) 0%,
+    rgba(175, 96, 37, 0.7166913765474314) 50%,
+    rgba(175, 96, 37, 0) 100%
+  );
+  border: 0;
+}
+
+.rare-hr {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(175, 96, 37, 0) 0%,
+    rgba(255, 255, 119, 0.7166913765474314) 50%,
+    rgba(175, 96, 37, 0) 100%
+  );
+  border: 0;
+}
+.magic-hr {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(175, 96, 37, 0) 0%,
+    rgba(136, 136, 255, 0.7166913765474314) 50%,
+    rgba(175, 96, 37, 0) 100%
+  );
+  border: 0;
+}
+
+.normal-hr {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    rgba(175, 96, 37, 0) 0%,
+    rgba(255, 255, 255, 0.7166913765474314) 50%,
+    rgba(175, 96, 37, 0) 100%
+  );
+  border: 0;
+}
+
+.max-item-size {
+  min-width: 1100px;
+  max-width: 1100px;
+}
+
+.character-input {
+  max-width: 50px;
+}
+
+.rare-item {
+  color: #ffff77;
+}
+
+.magic-item {
+  color: #8888ff;
+}
+
+.normal-item {
+  color: #fff;
+}
+
+.highlight {
+}
+
+.highlight:hover {
+  -webkit-filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.42));
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.42));
+}
+
+.redSocket {
+  background: url(../assets/socket.png) no-repeat;
+  background-position: -2.5px -107.5px;
+}
+.greenSocket {
+  background: url(../assets/socket.png) no-repeat;
+  background-position: -107.5px -72.5px;
+}
+.blueSocket {
+  background: url(../assets/socket.png) no-repeat;
+  background-position: -2.5px -2.5px;
+}
+.whiteSocket {
+  background: url(../assets//socket.png) no-repeat;
+  background-position: -37.5px -107.5px;
+}
+
+.socket {
+  width: 30px;
+  height: 30px;
+  margin: 8.73225px;
+  float: left;
+  border-radius: 50%;
+  display: block;
+}
+
+.sockets {
+  width: 94.929px;
+  position: absolute;
+}
+
+.socketfloatRight {
+  float: right;
+}
+
+.sLink0 {
+  position: absolute;
+  z-index: 1;
+  background: url(../assets/socket.png) no-repeat;
+  background-position: 0px -140px;
+  width: 38px;
+  height: 15px;
+  left: 28px;
+  top: 16.23225px;
+}
+
+.sLink1 {
+  position: absolute;
+  z-index: 1;
+  background: url(../assets/socket.png) no-repeat;
+  background-position: -140px 0px;
+  width: 15px;
+  height: 38px;
+  left: 63.69675px;
+  top: 28.4645px;
+}
+
+.sLink2 {
+  position: absolute;
+  z-index: 1;
+  left: 28.4645px;
+  top: 63.69675px;
+  background: url(../assets/socket.png) no-repeat;
+  background-position: 0px -140px;
+  width: 38px;
+  height: 15px;
+}
+
+.sLink3 {
+  position: absolute;
+  z-index: 1;
+  background: url(../assets/socket.png) no-repeat;
+  background-position: -140px 0px;
+  width: 15px;
+  height: 38px;
+  left: 16.23225px;
+  top: 75.929px;
+}
+
+.sLink4 {
+  left: 28.4645px;
+  top: 111.16125px;
+  position: absolute;
+  z-index: 1;
+  background: url(../assets/socket.png) no-repeat;
+  background-position: 0px -140px;
+  width: 38px;
+  height: 15px;
+}
+
+.hide-on-hover :hover {
+  display: none;
+}
+
+.search-input-query {
+  max-width: 50px;
+  max-height: 40px;
+}
+
+input.search-input-query {
+  text-align: center;
+  padding: 5px;
+}
+
+.search-input-query::placeholder {
+  font-size: 10px;
+}
