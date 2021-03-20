@@ -8,7 +8,7 @@ PS: The code is very messy as I haven't really remove most of the testing code, 
 
 # Features:
 
-- Auto-complete on search with corrent names to be used for1 the API (it's very picky).
+- Auto-complete on search with correct names to be used for1 the API (it's very picky).
 - Auto searched the unique itemIDs after fetching the item list and then renders it.
 - Renders the correct socket color, number and links.
 - Fetch the characters of an account. (as long as it's public)
