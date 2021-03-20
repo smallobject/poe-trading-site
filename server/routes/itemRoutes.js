@@ -35,7 +35,12 @@ router.post('/', async (req, res) => {
             },
           ],
           filters: {
-            socket_filters: { filters: { sockets: req.body.item.sockets } },
+            socket_filters: {
+              filters: {
+                sockets: req.body.item.sockets,
+                links: req.body.item.links,
+              },
+            },
           },
         },
         sort: {

@@ -13,6 +13,10 @@ class Search extends Component {
       min: Number,
       max: Number,
     },
+    links: {
+      min: Number,
+      max: Number,
+    },
   };
 
   doThis = (e) => {
@@ -76,6 +80,35 @@ class Search extends Component {
                   sockets: {
                     ...this.state.sockets,
                     max: parseInt(socketMax.target.value),
+                  },
+                })
+              }
+            />
+            <label className='text-gray-400 text-sm h-full m-2'>Links</label>
+            <input
+              className='search-input-query text-xs m-1'
+              placeholder='Min'
+              value={this.state.links.min}
+              onChange={(linkMin) =>
+                this.setState({
+                  ...this.state,
+                  links: {
+                    ...this.state.links,
+                    min: parseInt(linkMin.target.value),
+                  },
+                })
+              }
+            />
+            <input
+              className='search-input-query text-xs m-1'
+              placeholder='Max'
+              value={this.state.links.max}
+              onChange={(linkMax) =>
+                this.setState({
+                  ...this.state,
+                  links: {
+                    ...this.state.links,
+                    max: parseInt(linkMax.target.value),
                   },
                 })
               }
