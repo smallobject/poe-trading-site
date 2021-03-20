@@ -38,10 +38,25 @@ PS: The code is very messy as I haven't really remove most of the testing code, 
 
 # Usage
 
-The project is using concurrently to run both server and client at once. Simply clone the repo first.
+The project is using concurrently to run both server and client at once.
+
+## Clone the repo
+
+```
+gh repo clone smallobject/poe-trading-site
+```
+
+## Change directory to server
 
 ```
 cd server
+```
 
+Run `npm run dev`
+I'm using concurrently to run both server and client at once.
+
+```
 npm run dev
+// It's running the following lines
+// "dev": "concurrently \"npm start\" \"cd .. && cd client && npm start\""
 ```
