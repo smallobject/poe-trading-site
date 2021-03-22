@@ -24,12 +24,13 @@
   border-top-color: initial;
   transform-origin: center top;
 }
-.tippy-box[data-theme~='tomato'] {
+.tippy-box[data-theme~='poe-search'] {
   background-color: #1f2937;
   font-size: 0.75rem;
   line-height: 1rem;
   border-radius: 2px;
 }
-.tippy-box[data-theme~='tomato'][data-placement^='top'] > .tippy-arrow::before {
+.tippy-box[data-theme~='poe-search'][data-placement^='top']
+  > .tippy-arrow::before {
   border-top-color: #1f2937;
 }
