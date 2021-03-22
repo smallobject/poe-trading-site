@@ -1,0 +1,7 @@
+.tp {
+  background-color: aliceblue;
+}
+.tp-hidden {
+  visibility: hidden;
+  pointer-events: none;
+}

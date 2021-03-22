@@ -2,6 +2,7 @@ import React from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 import { findCurrency } from '../../helpers/index';
+import CheckMark from '../../ui/CheckMark';
 
 import {
   checkItemLvlRequirements,
@@ -21,6 +22,7 @@ const SearchItem = ({ item }) => {
             src={item.item.icon}
             alt={item.item.name}
           />
+
           {/* Item sockets and links */}
           <div className='sockets highlight'>
             {item.item.sockets ? checkSocketsAndColors(item) : null}
@@ -58,6 +60,13 @@ const SearchItem = ({ item }) => {
               </span>
             </CopyToClipboard>
           </div>
+          {/* {item.item.verified ? (
+            <CheckMark
+              className='w-2.5 h-2.5 mt-1.5 ml-1.5'
+              fill='rgba(52, 211, 153)'
+            />
+          ) : null} */}
+          <CheckMark></CheckMark>
         </div>
       </div>
       {/* New Column Starts here for the item itself */}
