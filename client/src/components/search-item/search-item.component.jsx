@@ -3,6 +3,8 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 import { findCurrency } from '../../helpers/index';
 import CheckMark from '../../ui/CheckMark';
+import AwayIcon from '../../ui/AwayIcon';
+import OnlineIcon from '../../ui/OnlineIcon';
 
 import {
   checkItemLvlRequirements,
@@ -43,13 +45,7 @@ const SearchItem = ({ item }) => {
           />
           {/* Item online status, checking if person who posted it is afk or active */}
           <div className='flex items-center justify-center'>
-            <span
-              className={`rounded-full ml-1 py-1.5 px-1.5 ${
-                item.listing.account.online.status
-                  ? 'bg-yellow-400'
-                  : 'bg-green-400'
-              }`}
-            />
+            {item.listing.account.online.status ? <AwayIcon /> : <OnlineIcon />}
             {/* The account that listed the item and copy to clipboard whisper*/}
             <span className='text-xs text-gray-500 ml-1'>
               {item.listing.account.name}

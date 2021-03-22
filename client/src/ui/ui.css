@@ -1,8 +1,34 @@
+.tippy-arrow {
+  width: 16px;
+  height: 16px;
+  color: #333;
+}
+.tippy-arrow:before {
+  content: '';
+  position: absolute;
+  border-color: transparent;
+  border-style: solid;
+}
+.tippy-content {
+  position: relative;
+  padding: 4px 7px;
+  z-index: 1;
+}
+.tippy-box[data-placement^='top'] > .tippy-arrow {
+  bottom: 0;
+}
+.tippy-box[data-placement^='top'] > .tippy-arrow:before {
+  bottom: -7px;
+  left: 0;
+  border-width: 8px 8px 0;
+  border-top-color: initial;
+  transform-origin: center top;
+}
 .tippy-box[data-theme~='tomato'] {
   background-color: #1f2937;
-  color: #d1d5db;
   font-size: 0.75rem;
   line-height: 1rem;
+  border-radius: 2px;
 }
 .tippy-box[data-theme~='tomato'][data-placement^='top'] > .tippy-arrow::before {
   border-top-color: #1f2937;
