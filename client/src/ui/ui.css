@@ -1,7 +1,7 @@
-.tp {
-  background-color: aliceblue;
+.tippy-box[data-theme~='tomato'] {
+  background-color: #1f2937;
+  color: yellow;
 }
-.tp-hidden {
-  visibility: hidden;
-  pointer-events: none;
+.tippy-box[data-theme~='tomato'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: #1f2937;
 }
