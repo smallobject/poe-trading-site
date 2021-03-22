@@ -4,7 +4,7 @@ The project uses the PoE official API to search for items, accounts and characte
 
 PS: The code is very messy as I haven't really remove most of the testing code, will get around to this as I'm converting the project to Typescript and most likely Python for backend.
 
-![demofile](https://raw.githubusercontent.com/smallobject/poe-trading-site/master/images/demo.gif 'Demo Image')
+![demofile](https://raw.githubusercontent.com/smallobject/poe-trading-site/main/images/demo.gif 'Demo Image')
 
 # Features:
 
@@ -18,6 +18,7 @@ PS: The code is very messy as I haven't really remove most of the testing code, 
 - Auto-copies the buyout whisper if you click on whisper.
 - Socket searching for items. (This can be expanded greatly)
 - Utility functions for sockets, links that can be customized if new sockets or more links are added.
+- Tooltips explaining small UI elements.
 
 # Todo:
 
@@ -31,6 +32,7 @@ PS: The code is very messy as I haven't really remove most of the testing code, 
 - [ ] Move project to Typescript or remake it.
 - [ ] Move backend to Python.
 - [ ] Add character loading for private profiles which would require SESSID from the official website.
+- [ ] Add more tooltips
 
 # Used
 
