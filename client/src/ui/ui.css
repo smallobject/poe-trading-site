@@ -1,6 +1,8 @@
 .tippy-box[data-theme~='tomato'] {
   background-color: #1f2937;
-  color: yellow;
+  color: #d1d5db;
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 .tippy-box[data-theme~='tomato'][data-placement^='top'] > .tippy-arrow::before {
   border-top-color: #1f2937;

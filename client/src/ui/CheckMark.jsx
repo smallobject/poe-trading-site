@@ -4,14 +4,14 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css'; // optional
 import './ui.css';
 
-const Example = () => {
+const CheckMark = () => {
   return (
     <div>
       <Tippy content='Item is verified' className='text-xs' theme='tomato'>
-        <CheckMarkSVG className='cursor-pointer w-2.5 h-2.5 mt-1.5 ml-1.5' />
+        <CheckMarkSVG className='w-2.5 h-2.5 mt-1.5 ml-1.5' fill='#34d399' />
       </Tippy>
     </div>
   );
 };
 
-export default Example;
+export default CheckMark;

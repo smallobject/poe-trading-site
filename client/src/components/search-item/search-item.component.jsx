@@ -60,13 +60,8 @@ const SearchItem = ({ item }) => {
               </span>
             </CopyToClipboard>
           </div>
-          {/* {item.item.verified ? (
-            <CheckMark
-              className='w-2.5 h-2.5 mt-1.5 ml-1.5'
-              fill='rgba(52, 211, 153)'
-            />
-          ) : null} */}
-          <CheckMark></CheckMark>
+          {/* Checks if item is verified or not */}
+          <CheckMark />
         </div>
       </div>
       {/* New Column Starts here for the item itself */}
