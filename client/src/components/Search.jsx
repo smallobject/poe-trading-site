@@ -3,7 +3,6 @@ import Autocomplete from 'react-autocomplete';
 import { MoviesData, renderMovieTitle } from './PoEItems';
 import './custom.css';
 
-import { connect } from 'react-redux';
 import { fetchLeagueItem } from '../actions';
 
 class Search extends Component {
@@ -23,11 +22,13 @@ class Search extends Component {
     this.props.fetchLeagueItem(this.state);
     e.preventDefault();
   };
-
   render() {
     return (
-      <div className='autocomplete-wrapper'>
-        <form onSubmit={this.doThis} className='autocomplete-wrapper m2'>
+      <div className='autocomplete-wrapper dark:autocomplete-wrapper'>
+        <form
+          onSubmit={this.doThis}
+          className='autocomplete-wrapper dark:autocomplete-wrapper'
+        >
           <Autocomplete
             inputProps={{ placeholder: 'Search for an item..' }}
             value={this.state.searchedItemName}
@@ -47,15 +48,16 @@ class Search extends Component {
               this.setState({ searchedItemName });
             }}
           />
-          {/* <div className='bg-gray-900 flex mt-2 p-2'> */}
           <div className='mb-5'>
             <button
               onClick={this.doThis}
-              className='w-28 h-8 bg-gray-900 text-gray-200 shadow-lg border-gray-500 border-solid border rounded-lg'
+              className='w-28 h-8 bg-gray-900 text-gray-200 shadow-lg border-gray-500 dark:border-gray-200 dark:text-gray-700 dark:bg-gray-100 border-solid border rounded-lg'
             >
               Search
             </button>
-            <label className='text-gray-400 text-sm h-full m-2'>Sockets</label>
+            <label className='text-gray-400  dark:text-gray-700 text-sm h-full m-2'>
+              Sockets
+            </label>
             <input
               className='search-input-query text-xs m-1'
               placeholder='Min'
@@ -84,7 +86,9 @@ class Search extends Component {
                 })
               }
             />
-            <label className='text-gray-400 text-sm h-full m-2'>Links</label>
+            <label className='text-gray-400 dark:text-gray-700 text-sm h-full m-2'>
+              Links
+            </label>
             <input
               className='search-input-query text-xs m-1'
               placeholder='Min'
@@ -120,12 +124,4 @@ class Search extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  return {
-    leagueItem: state.leagueItem,
-  };
-};
-
-export default connect(mapStateToProps, {
-  fetchLeagueItem,
-})(Search);
+export default Search;

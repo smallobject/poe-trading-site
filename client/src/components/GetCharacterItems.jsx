@@ -37,7 +37,7 @@ class GetCharacterItems extends Component {
           <form onSubmit={this.handleSubmit} className='float-left'>
             <HeaderQuestionMark />
             <input
-              className='w-28 text-sm text-gray-300 bg-gray-900 border-gray-600 border border-solid rounded-sm'
+              className='w-28 text-sm text-gray-300 bg-gray-900 border-gray-600 dark:bg-gray-100 dark:border-gray-200 dark:text-gray-700 border border-solid rounded-sm'
               onChange={this.handleChange}
               type='text'
               placeholder=' Account Name'
@@ -45,7 +45,7 @@ class GetCharacterItems extends Component {
             />
           </form>
           <div className='float-right'>
-            <select className='w-28 text-sm text-gray-400 bg-gray-900 border-gray-600 border border-solid rounded-sm'>
+            <select className='w-28 text-sm text-gray-400 bg-gray-900 border-gray-600 dark:bg-gray-100 dark:border-gray-200 dark:text-gray-700 border border-solid rounded-sm'>
               <option value=''>Empty</option>
             </select>
             <ThemeToggle />

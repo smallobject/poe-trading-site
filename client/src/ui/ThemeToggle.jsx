@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { ReactComponent as Sun } from '../assets/sun.svg';
+import { connect } from 'react-redux';
+
 import useDarkMode from '../hooks/useTheme';
 
-const ThemeToggle = () => {
+const ThemeToggle = ({ selectedTheme }) => {
   const [colorTheme, setTheme] = useDarkMode();
   const [moon, setMoon] = useState(false);
 
@@ -20,4 +22,8 @@ const ThemeToggle = () => {
   );
 };
 
-export default ThemeToggle;
+const mapStateToProps = (state) => ({
+  selectedTheme: state.selectedTheme,
+});
+
+export default connect(mapStateToProps)(ThemeToggle);
