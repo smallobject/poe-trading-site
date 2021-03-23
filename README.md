@@ -6,6 +6,10 @@ PS: The code is very messy as I haven't really remove most of the testing code, 
 
 ![demofile](https://raw.githubusercontent.com/smallobject/poe-trading-site/main/images/demo.gif 'Demo Image')
 
+### Added dark mode recently
+
+![darkmode](https://raw.githubusercontent.com/smallobject/poe-trading-site/main/images/darkmode.gif 'Dark Mode Image')
+
 # Features:
 
 - Auto-complete on search with correct names to be used for1 the API (it's very picky).
