@@ -5,6 +5,7 @@ import { fetchAccountCharacters } from '../actions';
 
 import GetItems from './GetItems';
 import HeaderQuestionMark from '../ui/HeaderQuestionMark';
+import ThemeToggle from '../ui/ThemeToggle';
 
 class GetCharacterItems extends Component {
   state = { value: '', character: '' };
@@ -35,7 +36,6 @@ class GetCharacterItems extends Component {
         <div>
           <form onSubmit={this.handleSubmit} className='float-left'>
             <HeaderQuestionMark />
-
             <input
               className='w-28 text-sm text-gray-300 bg-gray-900 border-gray-600 border border-solid rounded-sm'
               onChange={this.handleChange}
@@ -48,6 +48,7 @@ class GetCharacterItems extends Component {
             <select className='w-28 text-sm text-gray-400 bg-gray-900 border-gray-600 border border-solid rounded-sm'>
               <option value=''>Empty</option>
             </select>
+            <ThemeToggle />
           </div>
         </div>
       );

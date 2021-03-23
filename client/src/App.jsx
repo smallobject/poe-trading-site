@@ -5,7 +5,7 @@ import './assets/output.css';
 
 function App() {
   return (
-    <div className=''>
+    <div>
       <SideBar />
       <div className='w-full'>
         <div className='flex justify-center items-center'>
