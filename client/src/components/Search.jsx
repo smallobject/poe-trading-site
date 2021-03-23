@@ -4,7 +4,7 @@ import { MoviesData, renderMovieTitle } from './PoEItems';
 import './custom.css';
 
 import { fetchLeagueItem } from '../actions';
-
+import { connect } from 'react-redux';
 class Search extends Component {
   state = {
     searchedItemName: '',
@@ -19,8 +19,8 @@ class Search extends Component {
   };
 
   doThis = (e) => {
-    this.props.fetchLeagueItem(this.state);
     e.preventDefault();
+    this.props.fetchLeagueItem(this.state);
   };
   render() {
     return (
@@ -55,7 +55,7 @@ class Search extends Component {
             >
               Search
             </button>
-            <label className='text-gray-400  dark:text-gray-700 text-sm h-full m-2'>
+            <label className='text-gray-400 dark:text-gray-700 text-sm h-full m-2'>
               Sockets
             </label>
             <input
@@ -124,4 +124,12 @@ class Search extends Component {
   }
 }
 
-export default Search;
+const mapStateToProps = (state) => {
+  return {
+    leagueItem: state.leagueItem,
+  };
+};
+
+export default connect(mapStateToProps, {
+  fetchLeagueItem,
+})(Search);
